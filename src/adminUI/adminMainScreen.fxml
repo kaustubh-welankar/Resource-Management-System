@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="adminUI.AdminMainScreenController">
+  <children>
+    <TabPane layoutX="2.0" layoutY="-1.0" prefHeight="420.0" prefWidth="633.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="User Security">
+          <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <TableView layoutX="14.0" layoutY="14.0" prefHeight="356.0" prefWidth="429.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="User ID" />
+                    <TableColumn maxWidth="5000.0" minWidth="0.0" prefWidth="172.0" text="Name" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="122.0" text="Type" />
+                  </columns>
+                </TableView>
+                <Button layoutX="467.0" layoutY="100.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Change Password" />
+                <Button layoutX="467.0" layoutY="176.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Revoke Permissions" />
+                <Button layoutX="467.0" layoutY="252.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Personnel Data" />
+              </children>
+            </Pane>
+          </content>
+        </Tab>
+        <Tab text="Customer Service">
+          <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <TableView layoutX="12.0" layoutY="14.0" prefHeight="356.0" prefWidth="429.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="137.0" text="ID" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="155.0" text="Name" />
+                    <TableColumn prefWidth="135.0" text="Contact" />
+                  </columns>
+                </TableView>
+                <Button layoutX="466.0" layoutY="100.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Add a CSR" />
+                <Button layoutX="466.0" layoutY="252.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Delete" />
+                <Button layoutX="467.0" layoutY="176.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="View Details/Modify" />
+              </children>
+            </Pane>
+          </content>
+        </Tab>
+        <Tab text="Technicians">
+          <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <TableView layoutX="14.0" layoutY="14.0" prefHeight="356.0" prefWidth="429.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="135.0" text="ID" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="123.0" text="Name" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="171.0" text="Contact" />
+                  </columns>
+                </TableView>
+                <Button layoutX="467.0" layoutY="100.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Add a Technician" />
+                <Button layoutX="467.0" layoutY="176.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="View/Modify Details" />
+                <Button layoutX="467.0" layoutY="252.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Delete" />
+              </children>
+            </Pane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

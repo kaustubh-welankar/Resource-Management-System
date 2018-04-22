@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="gp" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="338.0">
+         <children>
+             <Button fx:id="loginButton" layoutX="138.0" layoutY="152.0" mnemonicParsing="false" onAction="#loginButtonPressed" text="Login" />
+             <TextField fx:id="usernameTextField" layoutX="64.0" layoutY="33.0" prefHeight="26.0" prefWidth="210.0" promptText="Username" />
+             <PasswordField fx:id="passwordField" layoutX="64.0" layoutY="74.0" prefHeight="26.0" prefWidth="210.0" promptText="Password" />
+             <ComboBox fx:id="userType" layoutX="90.0" layoutY="116.0" prefWidth="150.0" promptText="Login As" />
+         </children></Pane>
+   </children>
+</GridPane>
